@@ -2,6 +2,7 @@ package com.devsuperior.dslist.services;
 
 
 import com.devsuperior.dslist.dto.GameDTO;
+import com.devsuperior.dslist.dto.GameListDTO;
 import com.devsuperior.dslist.dto.GameMiniDTO;
 import com.devsuperior.dslist.entities.Game;
 import com.devsuperior.dslist.repositories.GameRepository;
@@ -29,4 +30,8 @@ public class GameService {
         List<GameMiniDTO> dto = result.stream().map(x -> new GameMiniDTO(x)).toList();
         return dto;
     }
+
+
+
+
 }
